@@ -9,6 +9,7 @@
 body,
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -26,9 +27,10 @@ body {
 
 .title {
   color: var(--headingColor);
-  font-size: 3rem; /* 74.667px = 4.67rem */
+  font-size: 3.05rem; /* 74.667px = 4.67rem */
   line-height: 120%; /* 89.6px */
 }
+
 /* Individual Styles - Navbar */
 
 .navbar-list {
@@ -45,6 +47,7 @@ body {
 /* Intro Section */
 
 .intro {
+  width: 100%;
   background-color: var(--backgroundShade);
 }
 
@@ -71,7 +74,7 @@ body {
 
 .intro-img {
   height: 70vw;
-  width: 60vw;
+  width: 28vw;
   margin-top: 2vw;
   max-height: 50rem;
   max-width: 40rem;
@@ -79,8 +82,9 @@ body {
 .intro-img img {
   height: 60vw;
   max-height: 45rem;
-  width: 50vw;
-  max-width: 45rem;
+  width: 40vw;
+  max-width: 50rem;
+  object-fit: contain;
 }
 
 /* Expertise Section */
@@ -88,10 +92,6 @@ body {
 .regular-card {
   border-radius: 0.67rem;
   background: var(--backgroundShade);
-  /* height: 11vw;
-  width: 10vw; */
-  height: 17rem;
-  width: 17rem;
 }
 
 .custom-card {
@@ -112,23 +112,17 @@ body {
 
 
 /* Media Query */
-@media (max-width: 767.98px) {
-
-  .regular-card {
-    height: 17rem;
-    width: 28rem;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  .regular-card {
-    height: 17rem;
-    width: 20rem;
-  }
-}
-
 
 @media (max-width: 1399.98px) {
+  .text600 {
+    font-size: 2.5rem;
+  }
+  .title {
+    font-size: 4.5rem;
+  }
+  .intro-description {
+    font-size: 2rem;
+  }
   .intro-img {
     height: 60vw;
     width: 90vw;
@@ -140,6 +134,7 @@ body {
     height: 60vw;
     width: 90vw;
     max-width: 70rem;
+    max-height: 50rem;
     position: absolute;
     bottom: 0;
     left: 50%;
