@@ -5,6 +5,7 @@
   --backgroundShade: #d3e9f3;
   --headingColor: #282938;
   --whiteColor: #ffffff;
+  --borderColor: #006b6a;
 }
 body,
 html {
@@ -27,7 +28,7 @@ body {
 
 .title {
   color: var(--headingColor);
-  font-size: 3.05rem; /* 74.667px = 4.67rem */
+  font-size: 3.5rem; /* 74.667px = 4.67rem */
   line-height: 120%; /* 89.6px */
 }
 
@@ -62,7 +63,7 @@ body {
 }
 
 .intro-description {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--bodyColor);
   line-height: 150%; /* 36px */
 }
@@ -144,27 +145,39 @@ body {
 /* Portfolio Section */
 
 .portfolio-btn {
-  border-radius: 1rem;
+  border-radius: 0.635rem;
   background: #e62872;
   box-shadow: 0px 2px 4px 0px rgba(16, 24, 40, 0.05);
 }
-.portfolio-btn:hover{
+.portfolio-btn:hover {
   background: #e62872;
 }
-.portfolio .dribble-btn{
+.portfolio-btn:focus {
+  box-shadow: none;
+}
+.portfolio .dribble-btn {
   border-bottom: 2px solid var(--primaryColor);
 }
-.portfolio .dribble-btn img{
+.portfolio .dribble-btn img {
   width: 1rem;
   height: 1rem;
   vertical-align: middle;
 }
 
-.grid-fraction{
+.grid-fraction {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+/* Testimonials section */
 
+.testimonials {
+  background-color: var(--backgroundShade);
+}
+
+.testimonials .testimonials-card {
+  border-radius: 0.5rem;
+  border: 2px solid var(--borderColor);
+}
 
 /* Media Query */
 @media (max-width: 402.98px) {
