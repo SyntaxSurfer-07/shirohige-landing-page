@@ -32,6 +32,36 @@ body {
   line-height: 120%; /* 89.6px */
 }
 
+.text600 {
+  font-size: 1.34rem;
+  color: var(--headingColor);
+  line-height: 150%; /* 32px */
+}
+
+.description {
+  font-size: 1.5rem;
+  color: var(--bodyColor);
+  line-height: 150%; /* 36px */
+}
+
+.custom-btn {
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+  line-height: 150%; /* 32px */
+  border-radius: 5.333px;
+}
+
+.custom-btn:hover {
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+  border-radius: 5.333px;
+}
+
+.custom-btn:focus {
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+  border-radius: 5.333px;
+}
 /* Individual Styles - Navbar */
 
 .navbar-list {
@@ -52,27 +82,8 @@ body {
   background-color: var(--backgroundShade);
 }
 
-.text600 {
-  font-size: 1.34rem;
-  color: var(--headingColor);
-  line-height: 150%; /* 32px */
-}
-
 .highlighted-text {
   color: var(--primaryColor);
-}
-
-.intro-description {
-  font-size: 1.5rem;
-  color: var(--bodyColor);
-  line-height: 150%; /* 36px */
-}
-
-.custom-btn {
-  color: var(--whiteColor);
-  background: var(--primaryColor);
-  line-height: 150%; /* 32px */
-  border-radius: 5.333px;
 }
 
 /* .intro-img {
@@ -179,6 +190,18 @@ body {
   border: 2px solid var(--borderColor);
 }
 
+/* Contact Me Section */
+
+.contact form .form-control, .form-select{
+  border-radius: 0.625rem;
+  border: 2px solid var(--primaryColor);
+}
+
+/* Footer Section */
+
+.footer{
+  background-color: var(--backgroundShade);
+}
 /* Media Query */
 @media (max-width: 402.98px) {
   .text600 {
