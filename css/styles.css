@@ -1,8 +1,8 @@
 :root {
   --bodyColor: #1c1e53;
   --primaryColor: #5e3bee;
-  /* --backgroundShade: #F5FCFF; */
-  --backgroundShade: #d3e9f3;
+  /* --backgroundShade: #f5fcff; */
+  --backgroundShade: #e8f5fb;
   --headingColor: #282938;
   --whiteColor: #ffffff;
   --borderColor: #006b6a;
@@ -24,6 +24,18 @@ body {
   line-height: 150%; /* 32px */
   border-radius: 5.333px;
   border: 1.333px solid var(--primaryColor);
+}
+
+.custom-outline-btn:hover {
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+  border-radius: 5.333px;
+}
+
+.custom-outline-btn:focus {
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+  border-radius: 5.333px;
 }
 
 .title {
@@ -109,7 +121,7 @@ body {
 
 /* About Me Section */
 
-.about-me .intro-description .description-style {
+.about-me .description .description-style {
   text-align: justify;
 }
 
@@ -152,33 +164,38 @@ body {
 
 /* Contact Me Section */
 
-.contact form .form-control, .form-select{
+.contact form .row .custom-select option {
+  font-size: 0.8rem;
+}
+
+.contact form .form-control,
+.contact form .form-select {
   border-radius: 0.625rem;
   border: 2px solid var(--primaryColor);
 }
 
 /* Footer Section */
 
-.footer{
+.footer {
   background-color: var(--backgroundShade);
 }
 
-.footer .divider hr{
+.footer .divider hr {
   height: 2px;
   background: var(--primaryColor);
-  /* background: rgba(40, 41, 56, 0.55); */
 }
 
-.footer .footer-upper-list .footer-nav{
+.footer .footer-upper-list .footer-nav {
+  font-size: 1rem;
   text-decoration: none;
 }
 
-.footer .footer-upper-icon .footer-icon{
+.footer .footer-upper-icon .footer-icon {
   color: #000000;
 }
 
 .footer .footer-list .footer-lower-list,
-.footer .footer-list .footer-text{
+.footer .footer-list .footer-text {
   text-decoration: none;
   color: #000000;
   font-size: 1rem;
@@ -194,8 +211,29 @@ body {
   .title {
     font-size: 1.5rem;
   }
-  .intro-description {
+  .description {
     font-size: 0.8rem;
+  }
+  .expertise .card .card-body .custom-text {
+    font-size: 0.8rem;
+  }
+  .about-me .description .description-style {
+    font-size: 0.8rem;
+    line-height: 130%;
+  }
+  .portfolio .dribble-btn {
+    font-size: 0.8rem;
+  }
+  .portfolio .dribble-btn img {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .footer .footer-upper-list .footer-nav{
+    font-size: 0.9rem;
+  }
+  .footer .footer-list .footer-lower-list,
+  .footer .footer-list .footer-text {
+    font-size: 0.7rem;
   }
 }
 @media (min-width: 403px) and (max-width: 575.98px) {
@@ -205,8 +243,29 @@ body {
   .title {
     font-size: 2rem;
   }
-  .intro-description {
+  .description {
     font-size: 0.8rem;
+  }
+  .expertise .card .card-body .custom-text {
+    font-size: 0.8rem;
+  }
+  .about-me .description .description-style {
+    font-size: 0.8rem;
+    line-height: 130%;
+  }
+  .portfolio .dribble-btn {
+    font-size: 0.8rem;
+  }
+  .portfolio .dribble-btn img {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .footer .footer-upper-list .footer-nav{
+    font-size: 0.9rem;
+  }
+  .footer .footer-list .footer-lower-list,
+  .footer .footer-list .footer-text {
+    font-size: 0.7rem;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -216,8 +275,29 @@ body {
   .title {
     font-size: 2.5rem;
   }
-  .intro-description {
+  .description {
     font-size: 0.9rem;
+  }
+  .expertise .card .card-body .custom-text {
+    font-size: 1rem;
+  }
+  .about-me .description .description-style {
+    font-size: 0.8rem;
+    line-height: 130%;
+  }
+  .portfolio .dribble-btn {
+    font-size: 0.8rem;
+  }
+  .portfolio .dribble-btn img {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .footer .footer-upper-list .footer-nav{
+    font-size: 0.9rem;
+  }
+  .footer .footer-list .footer-lower-list,
+  .footer .footer-list .footer-text {
+    font-size: 0.8rem;
   }
 }
 
@@ -228,8 +308,22 @@ body {
   .title {
     font-size: 3rem;
   }
-  .intro-description {
+  .description {
     font-size: 1rem;
+  }
+  .expertise .card .card-body .custom-text {
+    font-size: 1rem;
+  }
+  .about-me .description .description-style {
+    font-size: 1rem;
+    line-height: 130%;
+  }
+  .portfolio .dribble-btn {
+    font-size: 0.8rem;
+  }
+  .portfolio .dribble-btn img {
+    width: 0.8rem;
+    height: 0.8rem;
   }
 }
 
@@ -240,8 +334,22 @@ body {
   .title {
     font-size: 4rem;
   }
-  .intro-description {
+  .description {
     font-size: 2rem;
+  }
+  .expertise .card .card-body .custom-text {
+    font-size: 1rem;
+  }
+  .about-me .description .description-style {
+    font-size: 1.15rem;
+    line-height: 130%;
+  }
+  .portfolio .dribble-btn {
+    font-size: 1rem;
+  }
+  .portfolio .dribble-btn img {
+    width: 0.8rem;
+    height: 0.8rem;
   }
 }
 
