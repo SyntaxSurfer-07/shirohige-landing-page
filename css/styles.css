@@ -86,22 +86,6 @@ body {
   color: var(--primaryColor);
 }
 
-/* .intro-img {
-  height: 70vw;
-  width: 28vw;
-  margin-top: 2vw;
-  max-height: 50rem;
-  max-width: 40rem;
-} */
-/* .intro-img img {
-  height: 60vw;
-  max-height: 45rem;
-  width: 40vw;
-  max-width: 50rem;
-  margin-left: 5rem;
-  object-fit: contain;
-} */
-
 /* Expertise Section */
 
 .regular-card {
@@ -124,30 +108,6 @@ body {
 }
 
 /* About Me Section */
-
-/* .about-img {
-  height: 70vw;
-  width: 28vw;
-  margin-top: 2vw;
-  max-height: 50rem;
-  max-width: 40rem;
-} */
-/* .intro-img img {
-  height: 60vw;
-  max-height: 45rem;
-  width: 40vw;
-  max-width: 50rem;
-  margin-left: 5rem;
-  object-fit: contain;
-} */
-
-/* .about-img img {
-  height: 60vw;
-  max-height: 45rem;
-  width: 40vw;
-  max-width: 50rem;
-  object-fit: contain;
-} */
 
 .about-me .intro-description .description-style {
   text-align: justify;
@@ -202,6 +162,30 @@ body {
 .footer{
   background-color: var(--backgroundShade);
 }
+
+.footer .divider hr{
+  height: 2px;
+  background: var(--primaryColor);
+  /* background: rgba(40, 41, 56, 0.55); */
+}
+
+.footer .footer-upper-list .footer-nav{
+  text-decoration: none;
+}
+
+.footer .footer-upper-icon .footer-icon{
+  color: #000000;
+}
+
+.footer .footer-list .footer-lower-list,
+.footer .footer-list .footer-text{
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 /* Media Query */
 @media (max-width: 402.98px) {
   .text600 {
@@ -261,23 +245,16 @@ body {
   }
 }
 
-@media (max-width: 1399.98px) {
-  /* .intro-img {
-    height: 60vw;
-    width: 90vw;
-    position: relative;
-    max-width: 70rem;
-    margin-top: 0;
+/* Navbar toggler list style */
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    justify-content: center !important;
   }
-  .intro-img img {
-    height: 60vw;
-    width: 90vw;
-    max-width: 70rem;
-    max-height: 50rem;
-    margin-left: 0;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  } */
+}
+/* Right-align the navbar content on smaller screens */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    text-align: right;
+  }
 }
